@@ -1,0 +1,9 @@
+#jsnack1{
+    background-color: green;
+    padding: 20px;
+}
+#jsnack1 a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
