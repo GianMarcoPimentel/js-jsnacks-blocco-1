@@ -20,7 +20,9 @@ const parola2 = prompt("Inserisci un'altra parola");
 document.getElementById("parola-2").innerHTML = parola2;
 console.log(parola2.length);
 /* if(parola1.length >) */
-
+if(parola1 == null || parola2 == null){
+    alert("Ricarica la pagina e inserisci entrambe le parole")
+}
 if(parola1.length > parola2.length){
     document.getElementById("parola-1").innerHTML = parola2;
     document.getElementById("parola-2").innerHTML = parola1;
