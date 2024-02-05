@@ -22,17 +22,17 @@ console.log(parola2.length);
 /* if(parola1.length >) */
 
 if(parola1.length > parola2.length){
-    document.getElementById("parola-1").innerHTML = parola1;
-    document.getElementById("parola-2").innerHTML = parola2;
-
-} else if(parola1.length = parola2.length){
-    
-    document.getElementById("parola-3").innerHTML = `Le due parole ${parola1} e ${parola2} hanno la stessa lunghezza`;
-
-} else{
     document.getElementById("parola-1").innerHTML = parola2;
     document.getElementById("parola-2").innerHTML = parola1;
-}
+    document.getElementById("parola-3").innerHTML = `La parola "${parola2}" è più corta della "${parola1}"`;
 
+} else if(parola1.length < parola2.length){
+    document.getElementById("parola-1").innerHTML = parola1;
+    document.getElementById("parola-2").innerHTML = parola2;
+    document.getElementById("parola-3").innerHTML = `La parola "${parola1}" è più corta della "${parola2}"`;
+} else{
+    document.getElementById("parola-3").innerHTML = `Le due parole "${parola1}" e "${parola2}" hanno la stessa lunghezza`;
+
+}
 
 
